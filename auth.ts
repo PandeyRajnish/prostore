@@ -90,7 +90,7 @@ export const config = {
     },
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     authorized({ request, auth }: any) {
-      // Check for session cat cookie
+      // Check for session cart cookie
       if (!request.cookies.get('sessionCartId')) {
         // Generate new session cart id cookie
         const sessionCartId = crypto.randomUUID();
